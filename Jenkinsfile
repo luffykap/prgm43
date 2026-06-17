@@ -42,7 +42,7 @@ pipeline{
 				git add destination.txt
 				git commit -m "updated"
 				
-				git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/luffykap/p43.git HEAD:main '''
+				git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/luffykap/prgm43.git HEAD:main '''
 			
 			}
 		}
