@@ -32,7 +32,7 @@ pipeline{
 				withCredentials([
 					usernamePassword(
 						credentialsId:'github-creds',
-						usernameVariable:'GITHUB_USERNAME',
+						usernameVariable:'GITHUB_USER',
 						passwordVariable:'GITHUB_TOKEN'
 						)
 					]
@@ -43,7 +43,7 @@ pipeline{
 					git add destination.txt
 					git commit -m "dn"
 					
-					git push http://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/luffykap/prgm43.git  HEAD:main'''
+					git push http://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/luffykap/prgm43.git  HEAD:main'''
 					}
 					}
 				}
